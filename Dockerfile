@@ -1,4 +1,4 @@
-FROM debian:bookworm-slim
+FROM debian:stable-slim
 
 ARG DEBIAN_FRONTEND=noninteractive
 
