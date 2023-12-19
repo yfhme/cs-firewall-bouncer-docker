@@ -3,6 +3,16 @@
     "extends": [
       "config:recommended"
     ],
+    "packageRules": [
+      {
+        "matchPackageNames": ["debian"],
+        "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)\\.?(?<patch>\\d+)?-(?<compatibility>.*)$"
+      },
+      {
+        "matchPackageNames": ["yfhme/y-cs-firewall-bouncer"],
+        "versioning": "regex:^v(?<major>\\d+)\\.(?<minor>\\d+)\\.?(?<patch>\\d+)?-(?<prerelease>.*)$"
+      }
+    ],
     "customManagers": [
       {
         "customType": "regex",
