@@ -1,4 +1,4 @@
-FROM debian:12.3-slim
+FROM debian:12.4-slim
 
 ARG DEBIAN_FRONTEND=noninteractive \
     TARGETARCH
