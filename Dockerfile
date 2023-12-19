@@ -1,4 +1,4 @@
-FROM ubuntu:mantic-20231128
+FROM debian:12.4-slim
 
 ARG DEBIAN_FRONTEND=noninteractive \
     TARGETARCH
