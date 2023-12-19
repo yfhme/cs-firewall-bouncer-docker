@@ -1,4 +1,4 @@
-FROM debian:12.4
+FROM ubuntu:mantic-20231128
 
 ARG DEBIAN_FRONTEND=noninteractive \
     TARGETARCH
@@ -16,7 +16,6 @@ RUN rep_deps="ca-certificates gettext" && \
     apt-get purge -y --auto-remove nftables && \
     apt-get upgrade -y && \
     apt-get install -y --no-install-recommends \
-      #$rep_deps \
       gettext \
       ipset \
       iptables && \
@@ -25,7 +24,6 @@ RUN rep_deps="ca-certificates gettext" && \
     cd crowdsec-firewall-bouncer-$FW_BOUNCER_VERSION && \
     ./install.sh && \
     apt-get purge -y --auto-remove && \
-      #$rep_deps && \
     rm -rf \
         /usr/local/go \
         /tmp/* \
