@@ -3,7 +3,7 @@ FROM debian:12.4-slim
 ARG DEBIAN_FRONTEND=noninteractive \
     TARGETARCH
 # renovate: datasource=github-tags depName=yfhme/y-cs-firewall-bouncer
-ENV FW_BOUNCER_VERSION=v0.0.29-rc0
+ENV FW_BOUNCER_VERSION=v0.0.29-rc1
 ENV BOUNCER_URL=https://github.com/yfhme/y-cs-firewall-bouncer/releases/download/$FW_BOUNCER_VERSION/crowdsec-firewall-bouncer-linux-$TARGETARCH.tgz 
 
 ADD https://github.com/yfhme/y-cs-firewall-bouncer/releases/download/$FW_BOUNCER_VERSION/crowdsec-firewall-bouncer-linux-$TARGETARCH.tgz  /tmp/src/
