@@ -1,4 +1,4 @@
-FROM debian:12.4-slim
+FROM debian:bookworm-20231218-slim
 
 ARG DEBIAN_FRONTEND=noninteractive \
     TARGETARCH
