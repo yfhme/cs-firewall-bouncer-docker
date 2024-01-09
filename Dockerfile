@@ -1,4 +1,4 @@
-FROM debian:12.4-slim
+FROM debian:12.4-slim@sha256:f80c45482c8d147da87613cb6878a7238b8642bcc24fc11bad78c7bec726f340
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG TARGETARCH
