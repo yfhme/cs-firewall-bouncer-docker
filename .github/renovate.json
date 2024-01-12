@@ -6,7 +6,7 @@
   "packageRules": [
     {
       "matchPackageNames": ["debian"],
-      "versioning": "regex:^(?<major>.*)\\-(?<build>\\d+)-(?<compatibility>.*)$"
+      "versioning": "regex:^bookworm-(?<major>\\d{4})(?<minor>\\d{2})(?<patch>\\d{2})-(?<compatibility>.*)$"
     },
     {
       "matchPackageNames": ["yfhme/y-cs-firewall-bouncer"],
