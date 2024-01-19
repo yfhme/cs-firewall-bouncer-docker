@@ -22,7 +22,7 @@ RUN set -x && \
   tar xzvf crowdsec-firewall-bouncer-linux-$TARGETARCH.tgz && \
   rm -f crowdsec-firewall-bouncer-linux-$TARGETARCH.tgz && \
   cd crowdsec-firewall-bouncer-$FW_BOUNCER_VERSION && \
-  ./install.sh && \
+  ./install-docker.sh && \
   apt-get purge -y --auto-remove && \
   rm -rf \
   /usr/local/go \
