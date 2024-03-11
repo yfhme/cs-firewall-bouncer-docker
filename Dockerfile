@@ -4,7 +4,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 ARG TARGETARCH
 
 # renovate: datasource=github-tags depName=yfhme/y-cs-firewall-bouncer
-ENV FW_BOUNCER_VERSION=v0.0.29-rc1b
+ENV FW_BOUNCER_VERSION=v0.0.29-rc1c
 ENV BOUNCER_URL=https://github.com/yfhme/y-cs-firewall-bouncer/releases/download/$FW_BOUNCER_VERSION/crowdsec-firewall-bouncer-linux-$TARGETARCH.tgz 
 
 ADD ${BOUNCER_URL} /tmp/src/
