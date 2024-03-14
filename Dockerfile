@@ -1,10 +1,10 @@
-FROM debian:bookworm-20231218-slim@sha256:f80c45482c8d147da87613cb6878a7238b8642bcc24fc11bad78c7bec726f340
+FROM debian:bookworm-20240211-slim@sha256:d02c76d82364cedca16ba3ed6f9102406fa9fa8833076a609cabf14270f43dfc
 
 ARG DEBIAN_FRONTEND=noninteractive
 ARG TARGETARCH
 
 # renovate: datasource=github-tags depName=yfhme/y-cs-firewall-bouncer
-ENV FW_BOUNCER_VERSION=v0.0.29-rc1b
+ENV FW_BOUNCER_VERSION=v0.0.29-rc2
 ENV BOUNCER_URL=https://github.com/yfhme/y-cs-firewall-bouncer/releases/download/$FW_BOUNCER_VERSION/crowdsec-firewall-bouncer-linux-$TARGETARCH.tgz 
 
 ADD ${BOUNCER_URL} /tmp/src/
